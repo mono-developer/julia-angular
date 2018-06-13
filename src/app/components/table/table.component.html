@@ -1,0 +1,14 @@
+<table class="person-info">
+  <tr>
+    <th>No</th>
+    <th>Name</th>
+    <th>City</th> 
+    <th>Country</th>
+  </tr>
+  <tr *ngFor="let person of personInfos; let i = index;">
+    <td>{{ i + 1 }}</td>
+    <td>{{ person.firstName }} {{ person.lastName }}</td>
+    <td>{{ person.city }}</td> 
+    <td>{{ person.country }}</td>
+  </tr>
+</table>
